@@ -1,1 +1,11 @@
+# David Cao, Tung Doan - Picobot Empty Room - Lab 1
 
+# Move to the left side
+0 **x* -> W 0
+0 **W* -> X 3
+
+# Start sweeping up and down
+3 x*** -> N 3
+3 N*** -> X 4
+4 ***x -> S 4
+4 ***S -> E 3
