@@ -1,11 +1,17 @@
 # David Cao, Tung Doan - Picobot Maze - Lab 1
-
+# Going North
 0 x*** -> N 1
 0 N*** -> X 3
+
+# Going East
 1 *x** -> E 2
 1 *E** -> X 0
+
+# Going South
 2 ***x -> S 3
 2 ***S -> X 1
+
+# Going West
 3 **x* -> W 0
 3 **W* -> X 2
 
