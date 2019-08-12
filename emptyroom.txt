@@ -1,10 +1,17 @@
 # David Cao, Tung Doan - Picobot Empty Room - Lab 1
 
-# Move to the left side
+# Move the bot to the left side.
+# We check if there's a wall to the bot's west; if there isn't,
+# keep moving west. Otherwise, switch to state 3, which begins
+# the up-and-down sweeping motion.
 0 **x* -> W 0
 0 **W* -> X 3
 
 # Start sweeping up and down
+# In state 3, we move up until we hit a wall, at which point we switch
+# to state 4, where we move down until we hit a wall. After hitting a
+# wall, we move east to move to the next column and move back to state
+# 3.
 3 x*** -> N 3
 3 N*** -> X 4
 4 ***x -> S 4
