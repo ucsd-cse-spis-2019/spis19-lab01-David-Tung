@@ -1,4 +1,13 @@
 # David Cao, Tung Doan - Picobot Maze - Lab 1
+# Each state corresponds to a direction to go in, and works
+# similarly to all the other states. This bot follows the
+# right hand rule. If there is no wall in front of it, it
+# will move forward and switch to the state corresponding to
+# turning clockwise, to check if it can follow the rule by
+# turning into a corner. If there is a wall, it attempts to
+# turn counter-clockwise to follow the right-hand rule on the
+# wall it is currently facing.
+
 # Going North
 0 x*** -> N 1
 0 N*** -> X 3
